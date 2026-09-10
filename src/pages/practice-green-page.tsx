@@ -6,6 +6,9 @@ import {
   StyledForm,
   StyledHeader,
   StyledPage,
+  StyledReferenceCard,
+  StyledReferenceTable,
+  StyledReferenceTitle,
   StyledResetButton,
   StyledScoreInput,
   StyledScoreTable,
@@ -190,6 +193,41 @@ export const PracticeGreenPage = () => {
           <p> 2-3m 2 poäng (dubbelbogey) </p>
           <p> 3m 3 poäng (trippelbogey) </p>
         </div>
+        <StyledReferenceCard>
+          <StyledReferenceTitle>Snittscore herrar/pojkar</StyledReferenceTitle>
+          <StyledReferenceTable>
+            <tbody>
+              <tr>
+                <th scope="row">World class:</th>
+                <td>−5,5</td>
+              </tr>
+              <tr>
+                <th scope="row">European tour:</th>
+                <td>−2,9</td>
+              </tr>
+              <tr>
+                <th scope="row">Challenge tour:</th>
+                <td>−1,5</td>
+              </tr>
+              <tr>
+                <th scope="row">HCP +2:</th>
+                <td>+0,2</td>
+              </tr>
+              <tr>
+                <th scope="row">HCP scratch:</th>
+                <td>+2,0</td>
+              </tr>
+              <tr>
+                <th scope="row">HCP 5:</th>
+                <td>+6,3</td>
+              </tr>
+              <tr>
+                <th scope="row">HCP 10:</th>
+                <td>+10,7</td>
+              </tr>
+            </tbody>
+          </StyledReferenceTable>
+        </StyledReferenceCard>
       </StyledSheet>
     </StyledPage>
   );

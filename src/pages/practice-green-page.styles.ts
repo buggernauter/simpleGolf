@@ -233,3 +233,47 @@ export const StyledScoreInput = styled.select`
 export const StyledTotal = styled.td`
   font-family: Arial, sans-serif;
 `;
+
+export const StyledReferenceCard = styled.aside`
+  width: min(100%, 22.5rem);
+  box-sizing: border-box;
+  margin-top: 1rem;
+  padding: 1.75rem 2.25rem;
+  background: #fff3bf;
+  color: #26221d;
+`;
+
+export const StyledReferenceTitle = styled.h2`
+  margin: 0 0 0.2rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+`;
+
+export const StyledReferenceTable = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.4rem;
+  letter-spacing: 0.025em;
+
+  th,
+  td {
+    padding: 0.12rem 0;
+    border-top: 0.0625rem solid #777269;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+
+  th {
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  td {
+    text-align: right;
+  }
+
+  @media (max-width: 27rem) {
+    font-size: 1.15rem;
+  }
+`;
