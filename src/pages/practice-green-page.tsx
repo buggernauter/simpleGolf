@@ -98,22 +98,20 @@ export const PracticeGreenPage = () => {
                   <td>
                     <StyledScoreInput
                       aria-label={`Score för hål ${index + 1}`}
-                      inputMode="text"
-                      min="-2"
-                      max="3"
                       name={`score-${index + 1}`}
-                      pattern="-?[0-3]"
-                      type="text"
                       value={scores[index]}
                       onChange={(event) =>
                         updateScore(index, event.target.value)
                       }
-                      onBlur={(event) => {
-                        if (event.target.value === "-") {
-                          updateScore(index, "");
-                        }
-                      }}
-                    />
+                    >
+                      <option value="">–</option>
+                      <option value="-2">−2</option>
+                      <option value="-1">−1</option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </StyledScoreInput>
                   </td>
                 </tr>
               ))}
@@ -147,22 +145,20 @@ export const PracticeGreenPage = () => {
                     <td>
                       <StyledScoreInput
                         aria-label={`Score för hål ${holeNumber}`}
-                        inputMode="text"
-                        min="-2"
-                        max="3"
                         name={`score-${holeNumber}`}
-                        pattern="-?[0-3]"
-                        type="text"
                         value={scores[scoreIndex]}
                         onChange={(event) =>
                           updateScore(scoreIndex, event.target.value)
                         }
-                        onBlur={(event) => {
-                          if (event.target.value === "-") {
-                            updateScore(scoreIndex, "");
-                          }
-                        }}
-                      />
+                      >
+                        <option value="">–</option>
+                        <option value="-2">−2</option>
+                        <option value="-1">−1</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </StyledScoreInput>
                     </td>
                   </tr>
                 );

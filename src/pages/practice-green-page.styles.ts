@@ -205,7 +205,7 @@ export const StyledScoreTable = styled.table`
   }
 `;
 
-export const StyledScoreInput = styled.input`
+export const StyledScoreInput = styled.select`
   width: min(100%, 5rem);
   height: 2.35rem;
   box-sizing: border-box;
@@ -217,6 +217,8 @@ export const StyledScoreInput = styled.input`
   font-family: Arial, sans-serif;
   font-size: 1.125rem;
   text-align: center;
+  text-align-last: center;
+  cursor: pointer;
 
   &:hover {
     background: #fff9e8;
