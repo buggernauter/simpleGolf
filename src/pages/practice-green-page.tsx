@@ -98,11 +98,11 @@ export const PracticeGreenPage = () => {
                   <td>
                     <StyledScoreInput
                       aria-label={`Score för hål ${index + 1}`}
-                      inputMode="numeric"
+                      inputMode="text"
                       min="-2"
                       max="3"
                       name={`score-${index + 1}`}
-                      pattern="[0-9]*"
+                      pattern="-?[0-3]"
                       type="text"
                       value={scores[index]}
                       onChange={(event) =>
@@ -147,11 +147,11 @@ export const PracticeGreenPage = () => {
                     <td>
                       <StyledScoreInput
                         aria-label={`Score för hål ${holeNumber}`}
-                        inputMode="numeric"
+                        inputMode="text"
                         min="-2"
                         max="3"
                         name={`score-${holeNumber}`}
-                        pattern="[0-9]*"
+                        pattern="-?[0-3]"
                         type="text"
                         value={scores[scoreIndex]}
                         onChange={(event) =>
